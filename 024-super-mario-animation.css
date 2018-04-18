@@ -1,0 +1,118 @@
+* { box-sizing: border-box;}
+
+.ground {
+  animation: forward 7s steps(1000) infinite forwards;
+}
+
+@keyframes forward {
+  100% { background-position: -3000px 0px; }
+}
+@keyframes forward2 {
+  100% { background-position: 3000px 0px; }
+}
+.mountain {
+  background-image: url("images/023/layer-07.png");
+  width: 2999px;
+  height: 454px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: forward 7s steps(1000) infinite forwards;
+
+}
+.nube {
+  background-image: url("images/023/layer-01.png");
+  width: 2999px;
+  height: 454px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: forward 5s steps(1000) infinite forwards;
+}
+.nube2 {
+  background-image: url("images/023/layer-01.png");
+  width: 2999px;
+  height: 454px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: forward2 5s steps(1000) infinite forwards;
+  top: -120px;
+}
+.background {
+	padding: 100px;
+  width: 1200px;
+  height: 670px;
+  border: thin solid black;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  background-image: url("images/super-mario/001-background-full.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.digimon {
+    background-image: url("images/super-mario/digimon.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+	padding: 100px;
+  width: 1200px;
+  height: 670px;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  top: -400px;
+  }
+.ground {
+  background-image: url("images/super-mario/ground.png");
+  width: 1200px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.link{
+  width: 120px;
+  height: 125px;
+  background-image: url("images/super-mario/zelda.png");
+  animation: atack 0.75s steps(10) infinite, slide 4s steps(100) infinite;
+  margin-right: 100%;
+  position: absolute;
+  top: -121px;
+  left: -200px;
+}
+.poke1{
+  width: 120px;
+  height: 120px;
+  background-image: url("images/super-mario/sonic2.png");
+  animation: vuela 0.25s steps(4) infinite, slide 4s steps(100) infinite;
+  margin-right: 100%;
+  top: -114px;
+  position: absolute;
+  left: -400px;
+}
+.pika{
+  width: 120px;
+  height: 77px;
+  background-image: url("images/super-mario/pika.png");
+  animation: pika 0.25s steps(4) infinite, slide 4s steps(100) infinite;
+  margin-right: 150%;
+  top: -77px;
+  position: absolute;
+  left: -600px;
+}
+@keyframes atack {
+  100% {background-position: 1200px;}
+}
+@keyframes vuela {
+  100% {background-position: 500px;}
+}
+@keyframes pika {
+  100% {background-position: 500px;}
+}
+@keyframes slide {
+  100% {margin-left: 150%;
+  }

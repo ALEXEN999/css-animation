@@ -1,0 +1,30 @@
+.petera{
+  width: 120px;
+  height: 125px;
+  animation: atack 1s steps(10) infinite, slide 4s steps(100) infinite;
+  margin-right: 100%;
+}
+
+@keyframes atack {
+  100% {background-position: 1200px;}
+}
+
+@keyframes slide {
+  100% {margin-left: : -120px;}
+
+}
+
+.ground {
+  animation: forward 15s steps(1000) infinite forwards;
+  background: url(/super-mario/ground.png);
+  width: 1680px;
+  height: 113px;
+}
+
+@keyframes forward {
+  100% {
+    background-position: 1680px;
+    width: 1680px;
+    height: 113px;
+  }
+}
