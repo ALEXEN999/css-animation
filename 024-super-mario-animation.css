@@ -65,6 +65,20 @@
   background-position: center;
   top: -400px;
   }
+
+  .digimon:hover {
+    background-image: url("super-mario/poketit.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+  	padding: 100px;
+    width: 1200px;
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    top: -400px;
+
+    }
 .ground {
   background-image: url("images/super-mario/ground.png");
   width: 1200px;
@@ -74,10 +88,10 @@
   left: 0;
 }
 
-.link{
+.link {
   width: 120px;
   height: 125px;
-  background-image: url("images/super-mario/zelda.png");
+  background-image: url("super-mario/zelda.png");
   animation: atack 0.75s steps(10) infinite, slide 4s steps(100) infinite;
   margin-right: 100%;
   position: absolute;
@@ -88,7 +102,7 @@
   width: 120px;
   height: 120px;
   background-image: url("images/super-mario/sonic2.png");
-  animation: vuela 0.25s steps(4) infinite, slide 4s steps(100) infinite;
+  animation: vuela 0.25s steps(4) infinite, jump 2s steps(4) infinite forwards, slide 4s steps(100) infinite;
   margin-right: 100%;
   top: -114px;
   position: absolute;
@@ -104,6 +118,7 @@
   position: absolute;
   left: -600px;
 }
+
 @keyframes atack {
   100% {background-position: 1200px;}
 }
@@ -114,5 +129,11 @@
   100% {background-position: 500px;}
 }
 @keyframes slide {
-  100% {margin-left: 150%;
+  100% {margin-left: 150%;}
   }
+
+@keyframes jump {
+  50% { top: -114px;}
+  60% { top: -314px;background-image: url("images/super-mario/pika.png");}
+  70% { top: -114px;}
+}
