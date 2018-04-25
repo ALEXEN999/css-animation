@@ -102,7 +102,7 @@
   width: 120px;
   height: 120px;
   background-image: url("images/super-mario/sonic2.png");
-  animation: vuela 0.25s steps(4) infinite, jump 2s steps(4) infinite forwards, slide 4s steps(100) infinite;
+  animation: vuela 0.25s steps(4) infinite, jump 2.5s steps(3) 0.5s infinite forwards, slide 4s steps(100) infinite;
   margin-right: 100%;
   top: -114px;
   position: absolute;
@@ -119,6 +119,26 @@
   left: -600px;
 }
 
+.nyan {
+  background-image: url("super-mario/nyancat.gif");
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 300px;
+  margin-right: -50%;
+  left: -150px;
+  animation: nyan 3s steps(1) infinite forwards, slide2 4s steps(100) infinite;
+}
+.carlton {
+  background-image: url("super-mario/carlton.png");
+  width: 350px;
+  height: 497px;
+  position: absolute;
+  bottom: 300px;
+  margin-right: -50%;
+  left: -150px;
+  animation: carlton 3s steps(1) infinite forwards;
+}
 @keyframes atack {
   100% {background-position: 1200px;}
 }
@@ -131,9 +151,16 @@
 @keyframes slide {
   100% {margin-left: 150%;}
   }
+  @keyframes slide2 {
+    100% {margin-left: 150%;}
+    }
 
+}
+@keyframes nyan {
+  100% {background-position: 400px;}
+}
 @keyframes jump {
-  50% { top: -114px;}
-  60% { top: -314px;background-image: url("images/super-mario/pika.png");}
-  70% { top: -114px;}
+  53% { top: -114px; background-image: url("images/super-mario/sonic2.png");}
+  60% { top: -320px;background-image: url("super-mario/sonic_jump3.png");}
+  67% { top: -114px; background-image: url("images/super-mario/sonic2.png");}
 }
