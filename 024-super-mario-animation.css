@@ -129,16 +129,7 @@
   left: -150px;
   animation: nyan 3s steps(1) infinite forwards, slide2 4s steps(100) infinite;
 }
-.carlton {
-  background-image: url("super-mario/carlton.png");
-  width: 350px;
-  height: 497px;
-  position: absolute;
-  bottom: 300px;
-  margin-right: -50%;
-  left: -150px;
-  animation: carlton 3s steps(1) infinite forwards;
-}
+
 @keyframes atack {
   100% {background-position: 1200px;}
 }
